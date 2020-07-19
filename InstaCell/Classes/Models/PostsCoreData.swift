@@ -20,14 +20,18 @@ struct PostsData: Decodable {
             throw DecodingError.missingFile
         }
         
-        let decoder = JSONDecoder()
         let data = try Data(contentsOf: url)
-        self = try decoder.decode(PostsData.self, from: data)
+        self = try JSONDecoder().decode(PostsData.self, from: data)
     }
 }
 
 struct Post: Decodable {
+    let postOwnerIconURL: String
     let postOwnerName: String
+    let whereFromUser: String
     let postFollowers: [String]
+    let postLinkers: [String]
+    let followersLinks: [String?]
     let postImages: [String]
+    let postDate: String
 }

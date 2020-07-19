@@ -15,11 +15,10 @@ class InstagramTabBarController: UITabBarController {
     override func viewDidLoad() {
         super.viewDidLoad()
         setupViewControllers()
-        print(viewModel.getPosts())
     }
     
     private func setupViewControllers() {
-        let homeVC = UINavigationController(rootViewController: HomeViewController())
+        let homeVC = UINavigationController(rootViewController: HomeTableViewController())
         let searchVC = UINavigationController(rootViewController: SearchViewController())
         let addVC = UINavigationController(rootViewController: AddViewController())
         let favoritesVC = UINavigationController(rootViewController: FavoritesViewController())

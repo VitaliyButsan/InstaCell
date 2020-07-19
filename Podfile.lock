@@ -1,0 +1,27 @@
+PODS:
+  - ImageSlideshow (1.8.3):
+    - ImageSlideshow/Core (= 1.8.3)
+  - ImageSlideshow/Core (1.8.3)
+  - ImageSlideshow/SDWebImage (1.8.3):
+    - ImageSlideshow/Core
+    - SDWebImage (>= 3.7)
+  - SDWebImage (5.8.0):
+    - SDWebImage/Core (= 5.8.0)
+  - SDWebImage/Core (5.8.0)
+
+DEPENDENCIES:
+  - ImageSlideshow (~> 1.8.3)
+  - ImageSlideshow/SDWebImage
+
+SPEC REPOS:
+  trunk:
+    - ImageSlideshow
+    - SDWebImage
+
+SPEC CHECKSUMS:
+  ImageSlideshow: 4694d7d699a1549582e7cc631fb392d8f91630f3
+  SDWebImage: 84000f962cbfa70c07f19d2234cbfcf5d779b5dc
+
+PODFILE CHECKSUM: a46ae19ba0a1c06777daaf2c11f368244f489384
+
+COCOAPODS: 1.8.3

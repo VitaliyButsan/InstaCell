@@ -10,13 +10,16 @@ import Foundation
 
 class InstaPostsViewModel {
     
-    func getPosts() -> [Post]? {
+    var posts: [Post] = []
+    
+    func getPosts() -> Bool {
         do {
             let postsData = try PostsData(fileName: "Data")
-            return postsData.posts
+            self.posts = postsData.posts
+            return true
         } catch {
             print(error)
-            return nil
+            return false
         }
     }
 }

@@ -15,7 +15,7 @@ class HomeTableViewController: UITableViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
         
-        setNavBarTitle()
+        setupNavBar()
         registerTheCell()
         getPosts()
     }
@@ -26,8 +26,32 @@ class HomeTableViewController: UITableViewController {
         tableView.rowHeight = UITableView.automaticDimension
     }
     
-    private func setNavBarTitle() {
-        navigationItem.title = "Instagram"
+    private func setupNavBar() {
+        setupTitleLabel()
+        setupNavigationItems()
+    }
+    
+    private func setupTitleLabel() {
+        let titleLabel = UILabel()
+        titleLabel.frame = CGRect(x: 0, y: 0, width: 100, height: 50)
+        titleLabel.text = "Instagram"
+        titleLabel.font = UIFont(name: "BonbonRegular", size: 26)
+        navigationItem.titleView = titleLabel
+    }
+    
+    private func setupNavigationItems() {
+        guard let camera = UIImage(named: "camera") else { return }
+        guard let plane = UIImage(named: "plane") else { return }
+        let leftBarButton = UIBarButtonItem(image: camera, style: .plain, target: self, action: #selector(barButtonTap))
+        let rightBarButton = UIBarButtonItem(image: plane, style: .plain, target: self, action: #selector(barButtonTap))
+        navigationItem.leftBarButtonItem = leftBarButton
+        navigationItem.leftBarButtonItem?.tintColor = .black
+        navigationItem.rightBarButtonItem = rightBarButton
+        navigationItem.rightBarButtonItem?.tintColor = .black
+    }
+    
+    @objc func barButtonTap() {
+        print("Bar button tap tap tap...")
     }
     
     private func registerTheCell() {
@@ -67,6 +91,7 @@ extension HomeTableViewController {
         let instaPost = postsViewModel.posts[indexPath.row]
         cell.setupCell(withPost: instaPost)
         cell.postFollowersTextView.layoutIfNeeded()
+        cell.selectionStyle = .none
         return cell
     }
 }

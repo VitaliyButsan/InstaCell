@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		582DD6E224C494D200207A58 /* BonbonRegular.otf in Resources */ = {isa = PBXBuildFile; fileRef = 582DD6E124C494D200207A58 /* BonbonRegular.otf */; };
 		5867C901249A167B006771E0 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5867C900249A167B006771E0 /* AppDelegate.swift */; };
 		5867C903249A167B006771E0 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5867C902249A167B006771E0 /* SceneDelegate.swift */; };
 		5867C90B249A167B006771E0 /* InstaCell.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 5867C909249A167B006771E0 /* InstaCell.xcdatamodeld */; };
@@ -42,6 +43,7 @@
 
 /* Begin PBXFileReference section */
 		4324D5BC1FF8F14E0579DBDA /* Pods_InstaCell.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_InstaCell.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		582DD6E124C494D200207A58 /* BonbonRegular.otf */ = {isa = PBXFileReference; lastKnownFileType = file; path = BonbonRegular.otf; sourceTree = "<group>"; };
 		5867C8FD249A167B006771E0 /* InstaCell.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = InstaCell.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		5867C900249A167B006771E0 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		5867C902249A167B006771E0 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -103,6 +105,22 @@
 			path = Pods;
 			sourceTree = "<group>";
 		};
+		582DD6DE24C4941200207A58 /* Resources */ = {
+			isa = PBXGroup;
+			children = (
+				582DD6DF24C4942C00207A58 /* Fonts */,
+			);
+			path = Resources;
+			sourceTree = "<group>";
+		};
+		582DD6DF24C4942C00207A58 /* Fonts */ = {
+			isa = PBXGroup;
+			children = (
+				582DD6E124C494D200207A58 /* BonbonRegular.otf */,
+			);
+			path = Fonts;
+			sourceTree = "<group>";
+		};
 		5867C8F4249A167B006771E0 = {
 			isa = PBXGroup;
 			children = (
@@ -111,6 +129,7 @@
 				5867C8FE249A167B006771E0 /* Products */,
 				08DA822DA39BBB7F6C337163 /* Pods */,
 				E44395263CB5D4F1F2374615 /* Frameworks */,
+				582DD6DE24C4941200207A58 /* Resources */,
 			);
 			sourceTree = "<group>";
 		};
@@ -346,6 +365,7 @@
 			files = (
 				5867C94C249A49B8006771E0 /* Data.json in Resources */,
 				5867C90D249A1682006771E0 /* Assets.xcassets in Resources */,
+				582DD6E224C494D200207A58 /* BonbonRegular.otf in Resources */,
 				5867C930249A171E006771E0 /* LaunchScreen.storyboard in Resources */,
 				5867C935249A1911006771E0 /* Test task.pdf in Resources */,
 			);

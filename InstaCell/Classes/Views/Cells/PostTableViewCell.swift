@@ -110,7 +110,6 @@ class PostTableViewCell: UITableViewCell {
         let textView = UITextView()
         textView.isEditable = false
         textView.isScrollEnabled = false
-        textView.backgroundColor = .orange
         textView.textAlignment = .justified
         return textView
     }()
@@ -119,7 +118,6 @@ class PostTableViewCell: UITableViewCell {
         let textView = UITextView()
         textView.isEditable = false
         textView.isScrollEnabled = false
-        textView.backgroundColor = .green
         textView.textAlignment = .justified
         return textView
     }()
